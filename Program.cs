@@ -14,11 +14,10 @@ namespace lab6
             for (int i = 0; i<n; i++)
             {
                 double y = Math.Pow(Math.E, -rnd.NextDouble());
-                sum += y;
                 average += y / n;
                 sqrtaverage += y * y / n;
             }
-            Console.WriteLine("Task 1.1 result {0,-40} sigmaM is {1}",sum/n, Math.Sqrt((sqrtaverage -  average*average)/n));
+            Console.WriteLine("Task 1.1 result {0,-40} sigmaM is {1}",avarage, Math.Sqrt((sqrtaverage -  average*average)/n));
             Task12(n);
             Task2(n);
             Console.ReadKey();
